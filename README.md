@@ -12,7 +12,6 @@ The core features used in this repo are:
 2. Babies Names csv file used in this project was provided by National Records of Scotland [here](https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/vital-events/names/babies-first-names/babies-first-names-summary-records-comma-separated-value-csv-format)
 
 
-
 ## Install
 
 ```python
@@ -89,12 +88,21 @@ Commands
 # Here we are providing the app a csv file to read from and a path to write to. Also it 
 # includes the column names (year and gender) and a write boolean flag that tells 
 # the app that we want to write the output of the column names into that file.
->> python main.py find ../babies_names.csv  ../xyz.csv --f year --f gender --write
+>> python main.py find ../babies_names.csv  ../xyz.csv --f year --f gender --w
 ```
 
 ```python
 # Here we are providing the app with a csv file and path to write to. But we have not given it
 # a list of column names. So the app should prompt the user for it.
->> python main.py find ../babies_names.csv  ../xyz.csv --write
+>> python main.py find ../babies_names.csv  --w ../write_output_to_this_file.csv
 ```
 
+## Testing
+
+Tests are located in the src/test_main.py file.
+
+To run tests
+
+```python
+>> pytest
+```

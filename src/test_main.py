@@ -4,6 +4,7 @@ import main
 
 runner = CliRunner()
 
+# initialize the test app.
 app = main.app
 
 
