@@ -11,6 +11,9 @@ The core features used in this repo are:
 1. Typer [documentation](https://typer.tiangolo.com/)
 2. Babies Names csv file used in this project was provided by National Records of Scotland [here](https://www.nrscotland.gov.uk/statistics-and-data/statistics/statistics-by-theme/vital-events/names/babies-first-names/babies-first-names-summary-records-comma-separated-value-csv-format)
 
+## Link to the blog
+
+[Writing CLI tools using Typer](https://blogsbytaha.gtsb.io/cli-tool/)
 
 ## Install
 
