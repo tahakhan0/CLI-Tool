@@ -1,7 +1,8 @@
 ## Build CLI tool using Typer
 
 ## Introduction
-This mini project to introduce the ease of creating cli tools using [Typer](https://typer.tiangolo.com/).
+This is a mini project to introduce the ease of creating cli tools using [Typer](https://typer.tiangolo.com/).
+
 The core features used in this repo are:
 1. Reading a csv file.
 2. Write a csv file.
