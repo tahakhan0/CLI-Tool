@@ -13,8 +13,7 @@ app = typer.Typer()
 def find(
     path: Path = typer.Argument(None),
     fields: Optional[List[str]] = typer.Option(None, "--f"),
-    write: bool = typer.Option(False, "--write"),
-    write_path: Path = typer.Argument(None),
+    write_path: Path = typer.Option(None, "--w"),
 ):
     if path.is_file():
         if len(fields) == 0:
@@ -37,7 +36,7 @@ def find(
                 column_names=column_names, selection=selection
             )
 
-        if write:
+        if write_path is not None:
             if write_path.exists():
                 typer.secho(
                     f"Writing output to the file {write_path}.",
@@ -58,7 +57,7 @@ def find(
             )
         else:
             typer.secho(
-                f"I'm just going to print it out for you.",
+                f"You haven't given me a write path. So I'm just going to print it out for you.",
                 fg=typer.colors.BRIGHT_BLUE,
             )
 
